@@ -7,21 +7,19 @@ namespace LMS
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/library/script").Include(
-                        "~/Scripts/bootstrap.js",
-                        "~/Scripts/jquery-{version}.js",
-                        "~/Scripts/angular.js",
-                        "~/Scripts/angular-route.js",
-                        "~/app/LibraryApp.js",
-                        "~/app/HomeController.js",
-                        "~/app/Book/bookController.js",
-                        "~/app/Book/bookService.js"));
+            //bundles.Add(new StyleBundle("~/bundles/library/style").Include(
+            //          "Content/bootstrap.css",
+            //          "node_modules/bootstrap/dist/css/bootstrap.css",
+            //          "app/app.component.css"));
 
-            bundles.Add(new StyleBundle("~/bundles/library/style").Include(
-                      "~/Content/site.css",
-                      "~/Content/bootstrap.css"));
+            //bundles.Add(new ScriptBundle("~/bundles/library/script").Include(
+            //            "node_modules/zone.js/dist/zone.js",
+            //            "node_modules/reflect-metadata/Reflect.js",
+            //            "node_modules/systemjs/dist/ system.src.js",
+            //            "Scripts/bootstrap.js",
+            //            "Scripts/jquery-{version}.js"));
 
-            BundleTable.EnableOptimizations = false;
+            //BundleTable.EnableOptimizations = false;
         }
     }
 }
