@@ -1,12 +1,3 @@
-﻿<fieldset>
-    <legend>Book</legend>
-    <input type="button" class="btn btn-primary" value="Issue" ng-click="issueBook()" />
-    <input type="button" class="btn btn-primary" value="Return" ng-click="returnBook()" />
-
-    <input type="button" class="btn btn-primary" value="Add" [routerLink] ="['/addBook']" />
-    <input type="button" class="btn btn-primary" value="Modify" ng-click="modifyBook()" />
-    <input type="button" class="btn btn-primary" value="Delete" ng-click="deleteBook()" />
-</fieldset>
-<div>
+﻿<div>
     <router-outlet></router-outlet>
 </div>
