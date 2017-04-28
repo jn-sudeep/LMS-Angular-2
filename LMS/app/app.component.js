@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var book_service_1 = require("../app/book/book.service");
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -14,8 +15,9 @@ var AppComponent = (function () {
 }());
 AppComponent = __decorate([
     core_1.Component({
-        selector: 'pm-app',
-        templateUrl: 'app/app.component.html'
+        selector: 'libraryApp',
+        templateUrl: 'app/app.component.html',
+        providers: [book_service_1.BookService]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
