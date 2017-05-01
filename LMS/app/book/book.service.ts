@@ -21,9 +21,9 @@ export class BookService {
 
         let body = JSON.stringify(book);
 
-        //this._http.post('/api/Book/Save', body, options).toPromise().catch(this.handleError);
-        this._http.post('/api/Book/Save', body, options).map((res: Response) => JsonHttpHelper.json(res))
-            .catch(this.handleError);
+        this._http.post('/api/Book/Save', body, options).toPromise().catch(this.handleError);
+        //this._http.post('/api/Book/Save', body, options).map((res: Response) => JsonHttpHelper.json(res))
+        //    .catch(this.handleError);
     }
 
     private handleError(error: Response) {

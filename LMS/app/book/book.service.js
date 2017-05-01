@@ -12,6 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/toPromise");
+require("rxjs/add/operator/map");
 var BookService = (function () {
     function BookService(_http) {
         this._http = _http;
@@ -22,6 +23,8 @@ var BookService = (function () {
         var options = new http_1.RequestOptions({ headers: headers });
         var body = JSON.stringify(book);
         this._http.post('/api/Book/Save', body, options).toPromise().catch(this.handleError);
+        //this._http.post('/api/Book/Save', body, options).map((res: Response) => JsonHttpHelper.json(res))
+        //    .catch(this.handleError);
     };
     BookService.prototype.handleError = function (error) {
         throw error;
