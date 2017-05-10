@@ -27,7 +27,7 @@ var BookService = (function () {
         //    .catch(this.handleError);
     };
     BookService.prototype.handleError = function (error) {
-        throw error;
+        throw new Error("Wrong");
     };
     return BookService;
 }());

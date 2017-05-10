@@ -23,7 +23,8 @@ var AddBookComponent = (function () {
     }
     AddBookComponent.prototype.save = function () {
         try {
-            this._bookService.save(this.book);
+            //this._bookService.save(this.book);
+            throw new Error("Wrong");
         }
         catch (ex) {
             var test = ex;

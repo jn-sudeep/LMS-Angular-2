@@ -27,6 +27,6 @@ export class BookService {
     }
 
     private handleError(error: Response) {
-        throw error;
+        throw new Error("Wrong");
     }
 }
